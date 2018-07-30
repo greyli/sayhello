@@ -17,7 +17,11 @@
                     <h5 class="mb-1 text-success">{{ message.name }}
                         <small class="text-muted"> #{{ loop.revindex }}</small>
                     </h5>
-                    <small>{{ message.timestamp.strftime('%Y/%m/%d %H:%M') }}</small>
+                    <small data-toggle="tooltip" data-placement="top"
+                           data-timestamp="{{ message.timestamp.strftime('%Y-%m-%dT%H:%M:%SZ') }}"
+                           data-delay="500">
+                        {{ moment(message.timestamp).fromNow(refresh=True) }}
+                    </small>
                 </div>
                 <p class="mb-1">{{ message.body }}</p>
             </a>
