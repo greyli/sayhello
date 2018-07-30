@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}404 Error{% endblock %}
+
+{% block content %}
+    <p class="text-center">Page Not Found</p>
+{% endblock %}
+
+{% block footer %}
+    <a href="{{ url_for('index') }}">&larr; Go Back</a>
+{% endblock %}
