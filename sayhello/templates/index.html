@@ -1,18 +1,9 @@
 {% extends 'base.html' %}
-{% from 'macros.html' import form_field %}
+{% from 'bootstrap/form.html' import render_form %}
 
 {% block content %}
     <div class="hello-form">
-        <form method="post" action="{{ request.full_path }}">
-            {{ form.csrf_token }}
-            <div class="form-group required">
-                {{ form_field(form.name, class='form-control') }}
-            </div>
-            <div class="form-group required">
-                {{ form_field(form.body, class='form-control') }}
-            </div>
-            {{ form.submit(class='btn btn-secondary') }}
-        </form>
+        {{ render_form(form, action=request.full_path) }}
     </div>
     <h5>{{ messages|length }} messages
         <small class="float-right">
