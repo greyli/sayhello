@@ -24,7 +24,7 @@ class SayHelloTestCase(unittest.TestCase):
         db.session.remove()
         db.drop_all()
 
-    def test_app_exsit(self):
+    def test_app_exist(self):
         self.assertFalse(app is None)
 
     def test_app_is_testing(self):
