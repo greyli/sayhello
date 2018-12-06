@@ -10,7 +10,7 @@ import sys
 
 from sayhello import app
 
-# sqlite URI compatible
+# SQLite URI compatible
 WIN = sys.platform.startswith('win')
 if WIN:
     prefix = 'sqlite:///'
