@@ -2,7 +2,7 @@
 
 *Say hello to the world.*
 
-> Example application for *[Python Web Development with Flask](http://helleflask.com/en/book)* (《[Flask Web 开发实战](http://helleflask.com/book)》).
+> Example application for *[Python Web Development with Flask](http://helloflask.com/en/book)* (《[Flask Web 开发实战](http://helloflask.com/book)》).
 
 Demo: http://sayhello.helloflask.com
 
